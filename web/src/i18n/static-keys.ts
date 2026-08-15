@@ -306,8 +306,6 @@ export const STATIC_I18N_KEYS = [
   'High-risk status code retry input mismatch',
   'I confirm enabling high-risk retry',
 
-  // Subscription management
-  'Subscription Management',
   'Active',
   'Plan',
   'Price',

@@ -102,7 +102,6 @@ quota.threshold_gt_zero: "預警閾值必須大於0"
 # Subscription messages
 
 # Payment messages
-payment.compliance_required: "支付、兌換碼、訂閱方案和邀請返利功能已停用。管理員需先確認合規聲明後方可啟用。"
 
 # Topup messages
 

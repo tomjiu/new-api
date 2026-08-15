@@ -111,11 +111,6 @@ const (
 	MsgQuotaThresholdGtZero = "quota.threshold_gt_zero"
 )
 
-// Payment related messages
-const (
-	MsgPaymentComplianceRequired = "payment.compliance_required"
-)
-
 // Channel related messages
 const (
 	MsgChannelNotExists          = "channel.not_exists"

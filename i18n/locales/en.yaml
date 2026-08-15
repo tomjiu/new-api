@@ -101,7 +101,6 @@ quota.threshold_gt_zero: "Warning threshold must be greater than 0"
 # Subscription messages
 
 # Payment messages
-payment.compliance_required: "Payment, redemption, subscription, and invitation reward features are disabled. The administrator must confirm compliance terms before enabling them."
 
 # Topup messages
 

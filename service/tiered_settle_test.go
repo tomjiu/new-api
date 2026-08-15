@@ -377,9 +377,7 @@ func TestPrepareTieredBillingForSelectedGroupStartsBillingAfterFreeGroup(t *test
 		IsPlayground:    true,
 		ForcePreConsume: true,
 		OriginModelName: "gpt-test",
-		UserSetting: dto.UserSetting{
-			BillingPreference: "wallet_only",
-		},
+		UserSetting: dto.UserSetting{},
 		TieredBillingSnapshot: &billingexpr.BillingSnapshot{
 			BillingMode:               "tiered_expr",
 			ExprString:                `tier("base", p)`,

@@ -52,17 +52,14 @@ const DEFAULT_SIDEBAR_MODULES: SidebarModulesAdminConfig = {
   },
   personal: {
     enabled: true,
-    topup: true,
     personal: true,
   },
   admin: {
     enabled: true,
     channel: true,
     models: true,
-    redemption: true,
     user: true,
     setting: true,
-    subscription: true,
   },
 }
 
