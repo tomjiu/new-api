@@ -57,8 +57,6 @@ await i18n.use(initReactI18next).init({
   resources: {
     en: {
       translation: {
-        Subscription: 'Subscription',
-        'Deducted by subscription': 'Deducted by subscription',
         'Includes tool-call surcharge': 'Includes tool-call surcharge',
       },
     },
@@ -136,20 +134,23 @@ describe('log cost display', () => {
     await unmountCost(rendered)
   })
 
-  test('preserves the subscription badge and adds the same legacy surcharge marker', async () => {
+  test('shows the regular cost even when billing came from a legacy subscription source', async () => {
     const rendered = await renderCost({
       quota: 5000,
       other: {
         billing_source: 'subscription',
-        web_search: true,
-        web_search_call_count: 1,
-        web_search_price: 10,
       },
     })
 
-    assert.equal(rendered.container.textContent?.includes('Subscription'), true)
-    assert.ok(
-      rendered.container.querySelector('[data-tool-surcharge-indicator="true"]')
+    assert.equal(
+      normalizedText(rendered.container.textContent).includes(
+        normalizedText(formatLogQuota(5000))
+      ),
+      true
+    )
+    assert.equal(
+      rendered.container.querySelector('[data-tool-surcharge-indicator="true"]'),
+      null
     )
 
     await unmountCost(rendered)

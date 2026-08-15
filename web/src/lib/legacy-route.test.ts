@@ -29,11 +29,9 @@ describe('legacy frontend route migration', () => {
       '/console': '/dashboard',
       '/console/models': '/models',
       '/console/deployment': '/models/deployments',
-      '/console/subscription': '/subscriptions',
       '/console/channel': '/channels',
       '/console/token': '/keys',
       '/console/playground': '/playground',
-      '/console/redemption': '/redemption-codes',
       '/console/user': '/users',
       '/console/personal': '/profile',
       '/console/log': '/usage-logs',
@@ -52,9 +50,20 @@ describe('legacy frontend route migration', () => {
       resolveLegacyRoute('/login?redirect=%2Fkeys#continue'),
       '/sign-in?redirect=%2Fkeys#continue'
     )
+  })
+
+  test('maps former topup, redemption and subscription routes to the console fallback', () => {
     assert.equal(
       resolveLegacyRoute('/console/topup?source=email#orders'),
-      '/wallet?source=email#orders'
+      '/dashboard?source=email#orders'
+    )
+    assert.equal(
+      resolveLegacyRoute('/console/redemption'),
+      '/dashboard'
+    )
+    assert.equal(
+      resolveLegacyRoute('/console/subscription'),
+      '/dashboard'
     )
   })
 
@@ -64,7 +73,6 @@ describe('legacy frontend route migration', () => {
       dashboard: '/system-settings/content/dashboard',
       chats: '/system-settings/content/chat',
       drawing: '/system-settings/content/drawing',
-      payment: '/system-settings/billing/payment',
       ratio: '/system-settings/billing/model-pricing',
       ratelimit: '/system-settings/security/rate-limit',
       models: '/system-settings/models/global',

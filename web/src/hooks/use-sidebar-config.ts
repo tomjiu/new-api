@@ -105,15 +105,12 @@ const URL_TO_CONFIG_MAP: Record<string, { section: string; module: string }> = {
   '/usage-logs/common': { section: 'console', module: 'log' },
   '/usage-logs/drawing': { section: 'console', module: 'midjourney' },
   '/usage-logs/task': { section: 'console', module: 'task' },
-  '/wallet': { section: 'personal', module: 'topup' },
   '/profile': { section: 'personal', module: 'personal' },
   '/channels': { section: 'admin', module: 'channel' },
   '/models': { section: 'admin', module: 'models' },
   '/models/metadata': { section: 'admin', module: 'models' },
   '/models/deployments': { section: 'admin', module: 'models' },
   '/users': { section: 'admin', module: 'user' },
-  '/redemption-codes': { section: 'admin', module: 'redemption' },
-  '/subscriptions': { section: 'admin', module: 'subscription' },
   '/system-settings': { section: 'admin', module: 'setting' },
   '/system-settings/site': { section: 'admin', module: 'setting' },
 }
@@ -312,8 +309,8 @@ export function useSidebarConfig(navGroups: NavGroup[]): NavGroup[] {
 
 /**
  * Check whether a single route is visible under the current sidebar_modules
- * config. Used by entries living outside the sidebar (e.g. the profile
- * dropdown's wallet link) so they honour the same "wallet display" toggle.
+ * config. Used by entries living outside the sidebar so they honour the same
+ * module visibility toggles.
  */
 export function useIsSidebarModuleVisible(url: string): boolean {
   const { status } = useStatus()
