@@ -40,13 +40,6 @@ This document provides standard French translations for key project terminology 
 | 管理员 | Administrateur | Admin User | Administrateur système |
 | 普通用户 | Utilisateur normal | Normal User | Utilisateur avec privilèges standards |
 
-## Recharge et Échange (Recharge & Redemption)
-
-| Chinois | Français | Anglais | Description |
-|---------|----------|---------|-------------|
-| 充值 | Recharge | Top Up | Ajout de quota au compte |
-| 兑换码 | Code d'échange | Redemption Code | Code qui peut être échangé contre du quota |
-
 ## Gestion des Canaux (Channel Management)
 
 | Chinois | Français | Anglais | Description |
@@ -97,7 +90,6 @@ This document provides standard French translations for key project terminology 
 
 - **Complétion (Completion)** : Contenu de sortie du modèle
 - **Ratio (Ratio)** : Multiplicateur pour le calcul des prix
-- **Code d'échange (Redemption Code)** : Utilisé au lieu de "Code d'échange" pour plus de précision
 - **Fournisseur (Provider/Vendor)** : Organisation ou service fournissant des API ou des modèles d'IA
 
 ---

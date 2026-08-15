@@ -197,7 +197,7 @@ func UpdateOption(key string, value string) error {
 // transaction, then dispatches them through updateOptionMap in one pass. If
 // any DB write fails the whole transaction rolls back and no in-memory state
 // is touched — safe for callers that must commit a set of related options
-// atomically (e.g. payment gateway binding).
+// atomically (e.g. quota/billing settings).
 func UpdateOptionsBulk(values map[string]string) error {
 	if len(values) == 0 {
 		return nil

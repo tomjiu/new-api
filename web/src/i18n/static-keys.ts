@@ -370,8 +370,6 @@ export const STATIC_I18N_KEYS = [
   'System task records',
   'Personal Center Area',
   'User personal functions',
-  'Wallet Management',
-  'Balance and top-up management',
   'Personal Settings',
   'Personal info settings',
   'Saved successfully',

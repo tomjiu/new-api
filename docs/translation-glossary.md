@@ -36,13 +36,6 @@ This document provides standard translation references for key terminology in th
 | 管理员 | Admin User | 系统管理员 | System administrator |
 | 普通用户 | Normal User | 普通权限用户 | Regular user with standard privileges |
 
-## 充值与兑换 (Recharge & Redemption)
-
-| 中文 | English | 说明 | Description |
-|------|---------|------|-------------|
-| 充值 | Top Up | 为账户增加额度 | Add quota to account |
-| 兑换码 | Redemption Code | 可兑换额度的代码 | Code that can be redeemed for quota |
-
 ## 渠道管理 (Channel Management)
 
 | 中文 | English | 说明 | Description |

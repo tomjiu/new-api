@@ -196,7 +196,6 @@ docker run --name new-api -d --restart always \
 
 ### 💰 Comptabilisation et facturation des usages autorisés
 
-- ✅ Rechargement interne et allocation de quotas pour les scénarios légalement autorisés (EPay, Stripe)
 - ✅ Comptabilisation des coûts par requête, par utilisation et par hit de cache au niveau organisationnel
 - ✅ Statistiques de facturation du cache pour OpenAI, Azure, DeepSeek, Claude, Qwen et les modèles pris en charge
 - ✅ Politiques de facturation flexibles pour la gestion interne ou les clients entreprise autorisés
